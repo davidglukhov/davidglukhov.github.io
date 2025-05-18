@@ -2,32 +2,33 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD Student at University of Toronto & Vector Institute.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: selfie.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false  # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm David, a first year PhD student in Computer Science at the University of Toronto and the Vector Institute working with Prof. Nicolas Papernot and Prof. Vardan Papyan.
+
+I am interested in formalizing desiderata of secure and reliable generative AI. In this pursuit, I have formalized the commonly described goal of preventing adversaries from learning
+problematic things through an information-theoretic lens, demonstrating empirical and theoretical limitations of current approaches for safety evaluations and defense methods, and provably demonstrating a safety-utility tradeoff.
+To illustrate the challenge, I have proposed mosaic prompts, an attack method consisting of decomposing an impermissible task into dual-use, permissible sub-tasks posed to a victim model, enabling 
+jailbreak-free attacks which bypass extant defense methods. I am now looking into "hallucinations" in generative models, with the aim of understanding why, when, and how they occur.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 

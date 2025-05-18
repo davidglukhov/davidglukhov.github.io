@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 4
+title: Memory Efficient Backpropogation through Diffusion Generative Process
 description: another without an image
 img:
 importance: 3
