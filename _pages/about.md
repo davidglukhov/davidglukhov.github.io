@@ -30,6 +30,4 @@ problematic things through an information-theoretic lens, demonstrating empirica
 To illustrate the challenge, I have proposed mosaic prompts, an attack method consisting of decomposing an impermissible task into dual-use, permissible sub-tasks posed to a victim model, enabling 
 jailbreak-free attacks which bypass extant defense methods. I am now looking into "hallucinations" in generative models, with the aim of understanding why, when, and how they occur.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
