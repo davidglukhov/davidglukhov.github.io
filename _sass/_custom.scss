@@ -1,0 +1,158 @@
+/*******************************************************************************
+ * Site-specific polish layered on top of the al-folio theme.
+ ******************************************************************************/
+
+$font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+// Typography
+
+body {
+  font-family: $font-sans;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.navbar-brand,
+.nav-link {
+  font-family: $font-sans;
+  letter-spacing: -0.01em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.post-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.post-description {
+  font-size: 1.125rem;
+  color: var(--global-text-color-light);
+}
+
+article p {
+  margin-bottom: 1.15rem;
+}
+
+// Navbar
+
+.navbar {
+  opacity: 1;
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+
+  .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.15s ease;
+  }
+}
+
+// Profile portrait
+
+.profile {
+  img.profile_image,
+  img.rounded-circle,
+  picture img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 50% 40%;
+  }
+
+  img.rounded-circle {
+    border: 4px solid var(--global-bg-color);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14) !important;
+  }
+
+  .more-info {
+    font-family: $font-sans;
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    margin-top: 1rem;
+  }
+}
+
+// Social icons
+
+.social {
+  margin-top: 2rem;
+
+  .contact-icons {
+    font-size: 1.9rem;
+
+    a i {
+      display: inline-block;
+      transition: transform 0.15s ease;
+    }
+
+    a i::before {
+      color: var(--global-text-color-light);
+    }
+
+    a:hover i {
+      transform: translateY(-2px);
+    }
+
+    a:hover i::before {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Publications
+
+.publications {
+  ol.bibliography li {
+    margin-bottom: 1.75rem;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  .abbr abbr {
+    border-radius: 4px;
+    font-weight: 600;
+  }
+}
+
+// Links in running text get a subtle underline so they read as links
+
+article a:not(.btn):not(.nav-link):not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(.abbr a) {
+  text-decoration: underline;
+  text-decoration-color: rgba(128, 128, 128, 0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+// Keep the portrait a sensible size on phones instead of full width
+
+@media (max-width: 575.98px) {
+  .profile,
+  .profile.float-right,
+  .profile.float-left {
+    max-width: 220px;
+    margin: 0.5rem auto 1.5rem;
+    float: none !important;
+  }
+}
